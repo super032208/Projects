@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  background: #333 url("LA.jpeg") no-repeat center center / cover;
+  color: #f2f3f4;
+  overflow: hidden;
+}
+
+#pimg1 {
+  background: url("./img/slide.png") no-repeat;
+  height: 200px;
+  width: 200px;
+
+  /* padding: 0;
+  margin: 0; */
+  color: #f2f3f4;
+}
+#pimg2 {
+  background: url("./img/affor.png") no-repeat;
+  height: 200px;
+  width: 200px;
+  /* padding: 0;
+  margin: 0; */
+  color: #f2f3f4;
+}
+#pimg3 {
+  background: url("./img/slide.png") no-repeat;
+  height: 200px;
+  width: 200px;
+  /* padding: 0;
+  margin: 0; */
+  color: #f2f3f4;
+}
+
+/* #one {
+  color: #fff;
+}
+#two {
+  color: #fff;
+  text-align: center;
+}
+#three {
+  color: #fff;
+  float: right;
+} */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1rem, 1rem;
+  box-shadow: var(--shadow);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+h1,
+h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/*Cursor*/
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}

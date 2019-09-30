@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  background: #35424a;
+  height: 75px;
+}
+header a {
+  margin: 20px;
+  padding: 110px;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 16px;
+}
+#ul-nav {
+  padding: 20px;
+  text-decoration: none;
+}
+
+header li {
+  padding: 25px;
+  text-decoration: none;
+  display: inline;
+}

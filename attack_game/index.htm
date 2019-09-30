@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Games Javascrip</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Acme"
+    />
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/enemy.js"></script>
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <p>
+        This is the best Game Ever We triple dare you to play....
+      </p>
+      <h2>Choose your Character</h2>
+    </div>
+
+    <div class="interface">
+      <a href="# " onclick="GameManager.setGameStart('mario')">
+        <img src="img/players/mario.png" alt="mario" />
+        <div>
+          <h3>Mario</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse
+            laudantium in
+          </p>
+        </div>
+      </a>
+      <a href="#" onclick="GameManager.setGameStart('pika')">
+        <img src="img/players/pika.png" alt="pika" />
+        <div>
+          <h3>Pika Pika</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse
+            laudantium in
+          </p>
+        </div>
+      </a>
+      <a href="# " onclick="GameManager.setGameStart('robot')">
+        <img src="img/players/robot.png" alt="robot" />
+        <div>
+          <h3>I Robot</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse
+            laudantium in
+          </p>
+        </div>
+      </a>
+      <a href="# " onclick="GameManager.setGameStart('zelda')">
+        <img src="img/players/zelda.png" alt="zelda" />
+        <div>
+          <h3>Zelda</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse
+            laudantium in
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="actions"></div>
+    <div class="enemy"></div>
+    <div class="arena"></div>
+  </body>
+</html>

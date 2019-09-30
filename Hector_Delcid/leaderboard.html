@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <title>My Chart.js Chart</title>
+  </head>
+
+  <body>
+    <header style="background-color:#52514e">
+      <div class="embed-caption" style="background:#ececec">
+        <img
+          width="150"
+          style="padding:5px; left:0;height: 70px; position: absolute; top:0;"
+          src="https://www.virginpulse.com/wp-content/uploads/2013/10/VIR-logo-color-340x160-2.jpg"
+        />
+      </div>
+
+      <div>
+        <nav>
+          <ul id="ul-nav">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="leaderboard.html" target="_blank">Leaderboard</a></li>
+            <li><a href="friends.html" target="_blank">Friends</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+      let myChart = document.getElementById('myChart').getContext('2d');
+
+      // Global Options
+      Chart.defaults.global.defaultFontFamily = 'Lato';
+      Chart.defaults.global.defaultFontSize = 18;
+      Chart.defaults.global.defaultFontColor = '#777';
+
+      let massPopChart = new Chart(myChart, {
+        type: 'horizontalBar', // Monday to Sunday
+        data: {
+          labels: [
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday'
+          ],
+
+          datasets: [
+            {
+              label: '#Steps',
+              data: [100, 80, 90, 75, 88, 89, 90, 0],
+              //backgroundColor: rgba values
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(54, 162, 235, 0.6)',
+                'rgba(255, 206, 86, 0.6)',
+                'rgba(75, 192, 192, 0.6)',
+                'rgba(153, 102, 255, 0.6)',
+                'rgba(255, 159, 64, 0.6)',
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(255, 99, 132, 0.6)'
+              ],
+              borderWidth: 1,
+              borderColor: '#777',
+              hoverBorderWidth: 3,
+              hoverBorderColor: '#000'
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'VP Test Application',
+
+            fontSize: 25
+          },
+          legend: {
+            display: true,
+            position: 'right',
+            labels: {
+              fontColor: '#000'
+            }
+          },
+          layout: {
+            padding: {
+              left: 50,
+              right: 0,
+              bottom: 0,
+              top: 0
+            }
+          },
+          tooltips: {
+            enabled: true
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

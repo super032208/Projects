@@ -1,0 +1,20 @@
+.text-center {
+  color: #fff;
+  background-image: url(folder/img4.jpeg);
+  height: 1100px;
+  width: 1100px;
+
+  background-repeat: no-repeat;
+}
+
+.inner {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+
+  padding: 5px;
+  text-align: right;
+  font-family: "Times New Roman", Times, serif;
+}

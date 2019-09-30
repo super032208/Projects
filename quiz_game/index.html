@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is a quiz Game</h1>
+    <form id="quiz" name="quiz">
+      <p>What is the capital of Rhode Island?</p>
+      <input type="name" id="textbox" name="question1" />
+
+      <p>What is the capital of Connecticut?</p>
+      <input
+        type="radio"
+        id="mc"
+        name="question2"
+        value="Hartford"
+      />Hartford<br />
+      <input type="radio" id="mc" name="question2" value="Harford" />New
+      Hartford<br />
+
+      <p>What is the capital of New York?</p>
+      <input type="radio" id="mc" name="question3" value="Albany" />Albany<br />
+      <input type="radio" id="mc" name="question3" value="New York" />New
+      York<br />
+
+      <input
+        type="button"
+        id="button"
+        value="I'm finished"
+        onclick="check();"
+      />
+    </form>
+    <div id="after_submit">
+      <p id="message"></p>
+      <p id="number_correct"></p>
+      <img id="picture" />
+    </div>
+  </body>
+</html>
